@@ -59,3 +59,41 @@ footer {
     text-align:center;
     border-top:1px solid #ddd;
 }
+/* --- Navigation Styling --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar a {
+    margin-right: 25px;
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    color: #8a4fff;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+/* Make header responsive */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin-right: 10px;
+    }
+}
+
